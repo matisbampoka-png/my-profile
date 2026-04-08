@@ -8,6 +8,7 @@
   /* 3. Center the image */
   background-position: center;
   padding: 150px 0;
+  text-align: center;
 }
 
 .banner h1 {

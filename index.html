@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon profil</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,10 +12,69 @@
     <div class="container">
       <img src="images/profile-picture.png" class="avatar" alt="Matis Viana">
       <h1>Matis Viana</h1>
-      <h2>Développeur web</h2>
-      <a href="" class="btn-blue">Découvrir</a>
+      <h2>Développeur web en formation — Le Wagon</h2>
+      <a href="#contact" class="btn-blue">Me contacter</a>
     </div>
   </div>
+
+  <section id="about">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>
+        Bonjour, je suis Matis. Je découvre le HTML et le CSS avec Le Wagon.
+        J’aime apprendre pas à pas et construire des pages claires et soignées.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Mes compétences</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>HTML5</h3>
+          <p>Structure sémantique des pages : titres, sections, liens et images.</p>
+        </div>
+        <div class="card">
+          <h3>CSS3</h3>
+          <p>Mise en page, couleurs, flexbox et premières adaptations mobile.</p>
+        </div>
+        <div class="card">
+          <h3>Bonnes pratiques</h3>
+          <p>Nommage des fichiers, organisation du projet et code lisible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="contact-form" action="#" method="get">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="vous@exemple.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message"></textarea>
+
+        <button type="submit" class="btn-blue">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Suivez-moi</p>
+      <p>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:contact@exemple.com">Email</a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>

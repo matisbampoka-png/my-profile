@@ -5,6 +5,9 @@
 @import url("components/avatar.css");
 @import url("components/banner.css");
 @import url("components/button.css");
+@import url("components/card.css");
+@import url("components/form.css");
+@import url("components/footer.css");
 
 /* General style rules for fonts and colors */
 
@@ -23,7 +26,43 @@ a {
   text-decoration: none;
 }
 
+/* Container (vidéo Le Wagon : ~900px centré) */
 .container {
   width: 900px;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
+/* Page profil complète : sections + responsive (même logique que la landing) */
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner h2 {
+    font-size: 22px;
+  }
 }
