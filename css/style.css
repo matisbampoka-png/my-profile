@@ -1,0 +1,70 @@
+/* Polices Google (consigne Le Wagon) */
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+/* Composants */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+@import url("components/form.css");
+@import url("components/footer.css");
+
+/* Fond bannière : chemin depuis css/style.css → dossier images/ */
+.banner {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/background.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Général */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0;
+  color: #1f2937;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner h2 {
+    font-size: 22px;
+  }
+}
